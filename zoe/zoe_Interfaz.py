@@ -180,7 +180,7 @@ class ZoeInterface(QMainWindow):
             except wikipedia.exceptions.PageError as e:
                 self.speak("No se encontró la página solicitada.")
                 return str(e)
-        elif 'zoe' or 'zoé' in query.lower():
+        elif 'libro' in query.lower():
             self.speak('Zoe esta Pensando...')
             query = query.replace("Zoe", "")
             results = self.responder_pregunta(query)
